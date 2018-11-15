@@ -7187,7 +7187,7 @@ int mysql_get_create_sql_backup_table(char *dbname, String *create_sql)
     create_sql->append("start_binlog_pos int,");
     create_sql->append("end_binlog_file varchar(512),");
     create_sql->append("end_binlog_pos int,");
-    create_sql->append("sql_statement text,");
+    create_sql->append("sql_statement mediumtext,");
     create_sql->append("host VARCHAR(64),");
     create_sql->append("dbname VARCHAR(64),");
     create_sql->append("tablename VARCHAR(64),");
